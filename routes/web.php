@@ -12,8 +12,27 @@ use Illuminate\Support\Facades\Route;
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
 */
-Route::get('select',[MyController::class,'select']);
+// Route::get('select',[MyController::class,'select']);
 
-Route::get('index',[MyController::class,'add']);
+// Route::get('/index',[MyController::class,'add']);
 
-Route::get('insert',[MyController::class,'insert']);
+// Route::get('/insert',[MyController::class,'insert']);
+
+//********************* Routing Basic ******************************
+
+route::get('/index', function(){
+    return "test test test";
+}
+);
+
+//********************* Routing Parametre ******************************
+
+Route::get('/index/{id}',function($id){
+    return "Solicode .$id";
+});
+
+//********************* Routing Parametre ******************************
+
+Route::get('/index/{id}/{name}',function($id,$name){
+    return "solicode .$id .name.$name";
+});

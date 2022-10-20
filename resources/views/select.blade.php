@@ -1,6 +1,7 @@
+{{-- 
 @foreach ($data as $item)
 <div>
-    {{ $item->id }}
+    id:{{ $item->id }}
 </div>
     
-@endforeach
+@endforeach --}}
