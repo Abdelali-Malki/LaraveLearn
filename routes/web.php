@@ -19,6 +19,8 @@ Route::get('/index',[MyController::class,'add']);
 
 Route::get('/insert',[MyController::class,'insert']);
 
+
+
 //********************* Routing Basic ******************************
 
 // route::get('/index', function(){
